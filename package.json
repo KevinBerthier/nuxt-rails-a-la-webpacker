@@ -4,6 +4,11 @@
   "description": "My amazing Nuxt.js project",
   "author": "Kevin Berthier",
   "private": true,
+  "config": {
+    "nuxt": {
+      "port": "8080"
+    }
+  },
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
