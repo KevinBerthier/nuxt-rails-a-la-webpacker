@@ -4,6 +4,7 @@ import pkg from './package'
 export default {
   mode: 'universal',
   srcDir: 'frontend/',
+
   /*
   ** Headers of the page
   */
@@ -54,7 +55,9 @@ export default {
   ** Axios module configuration
   */
   axios: {
-    // See https://github.com/nuxt-community/axios-module#options
+    host: 'localhost',
+    port: 3000,
+    // prefix: '/api'
   },
 
   /*
