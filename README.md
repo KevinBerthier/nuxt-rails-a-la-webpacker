@@ -6,7 +6,7 @@
 
     yarn create nuxt-app frontend  
 
-Moove package.json & nuxt.config.js to the root
+Move package.json & nuxt.config.js to the root
 
     mv frontend/package.json package.json  
     mv frontend/nuxt.config.js nuxt.config.js  
