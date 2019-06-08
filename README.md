@@ -53,7 +53,7 @@ Set the Procfile path
 
     heroku config:set PROCFILE=frontend/Procfile -r frontend  
 
-and [follow this guide to set Nuxt for production](nuxtjs.org/faq/heroku-deployment/)
+and [follow this guide to set Nuxt for production](https://nuxtjs.org/faq/heroku-deployment/)
   
 Deploy the backend
 
