@@ -31,11 +31,13 @@ So we need 2 Procfiles and tell Heroku where the Procfile is located for each ap
 
 The Rails Procfile stay at the root :
 
-    touch Procfile << ECHO "web: bundle exec puma -C config/puma.rb"  
+    touch Procfile 
+    echo "web: bundle exec puma -C config/puma.rb"  >> Procfile
 
 The Nuxt Procfile is in frontend folder :
 
-    touch frontend/Procfile << ECHO "web: npm start"  
+    touch frontend/Procfile  
+    echo "web: npm start" >> frontend/Procfile  
 
 Create frontend app on Heroku :
 
