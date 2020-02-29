@@ -1,6 +1,6 @@
 ## First create Rails app
 
-    rails new --database postgresql --api nuxt-rails-a-la-webpacker 
+    rails new --database=postgresql --api nuxt-rails-a-la-webpacker 
 
 ## Then the Nuxt app in Frontend folder
 
@@ -55,12 +55,13 @@ Set the Procfile path
 
     heroku config:set PROCFILE=frontend/Procfile -r frontend  
 
-and [follow this guide to set Nuxt for production](https://nuxtjs.org/faq/heroku-deployment/)
+[follow this guide to set Nuxt for production](https://nuxtjs.org/faq/heroku-deployment/)
   
 Deploy the backend
 
     heroku apps:create nuxt-rails-backend --region=eu  
     git remote rename heroku backend  
-    heroku config:set API_URL=nuxt-rails-backend.herokuapp.com -r backend  
     heroku run rails db:seed -r backend
 
+and add API_URL for @nuxtjs/axios 
+    `heroku config:set API_URL=nuxt-rails-backend.herokuapp.com -r frontend`
